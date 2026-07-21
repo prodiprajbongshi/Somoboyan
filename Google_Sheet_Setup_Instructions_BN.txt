@@ -1,0 +1,17 @@
+সমতায় তারুণ্য ওয়েবসাইট — Google Sheet মতামত সংযোগ নির্দেশনা
+
+১. Shomotay_Tarunno_Feedback_Template.xlsx ফাইলটি Google Drive-এ আপলোড করুন।
+২. ফাইলটি Google Sheets দিয়ে খুলুন এবং প্রয়োজনে “Save as Google Sheets” করুন।
+৩. Google Sheet থেকে Extensions > Apps Script খুলুন।
+৪. Google_Apps_Script_Feedback.gs ফাইলের সম্পূর্ণ কোড Apps Script editor-এ পেস্ট করুন।
+৫. Save করুন। এরপর Deploy > New deployment নির্বাচন করুন।
+৬. Type হিসেবে Web app নির্বাচন করুন।
+৭. Execute as: Me এবং Who has access: Anyone নির্বাচন করুন।
+৮. Deploy করে যে Web App URL পাবেন সেটি কপি করুন।
+৯. Feedback_Config.js ফাইল খুলে PASTE_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE-এর জায়গায় URL বসান।
+১০. ShomotayTarunnoLP.html, ShomotayTarunnoHOF.html এবং Feedback_Config.js একই folder-এ রাখুন।
+১১. ওয়েবসাইট hosting-এ তিনটি file একসঙ্গে upload করুন।
+
+গুরুত্বপূর্ণ:
+- শুধু Excel upload করলে সরাসরি ওয়েবসাইট থেকে data লেখা সম্ভব নয়। Google Apps Script Web App URL যুক্ত করলে সংযোগ সম্পূর্ণ হবে।
+- URL যুক্ত হওয়ার আগে দেওয়া মতামত browser-এর local storage-এ সাময়িকভাবে থাকবে। URL যুক্ত হলে page load-এর সময় সেগুলো পাঠানোর চেষ্টা করা হবে।
